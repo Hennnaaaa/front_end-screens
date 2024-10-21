@@ -1,0 +1,66 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Font for the page */
+    background-color: #f4f4f4; /* Light gray background */
+    display: flex; /* Flex layout for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    max-width: 400px; /* Max width of the container */
+    width: 100%; /* Full width */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+label {
+    display: block; /* Block layout for labels */
+    margin: 15px 0 5px; /* Space above and below labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: calc(100% - 12px); /* Full width minus padding */
+    padding: 10px; /* Inner padding */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Inner padding */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributor Record</title>
+    <link rel="stylesheet" href="tr_style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h2>Distributor Record</h2>
+        <div class="header">
+            <h2>Welcome Admin</h2>
+            <a href="#" class="logout_button">Log out</a>  
+        </div>
+
+        <div class="filter-section">
+            <h3>Transaction Record</h3>
+            <form id="searchform">
+                <label for="date_start">Search by Date</label>
+                <input type="date" id="date_start">
+                <input type="date" id="date_end">
+                <input type="text" placeholder="Search by Account" id="search_account">
+                <button type="button" onclick="searchrecords()">Search</button>
+                <button type="button">Reset</button>
+            </form>        
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Account</th>
+                        <th>Actor</th>
+                        <th>Before Recharge</th>
+                        <th>Recharge</th>
+                        <th>After Recharge</th>
+                        <th>Cashier</th>
+                        <th>Balance Before Recharge</th>
+                        <th>Balance After Recharge</th>
+                        <th>Remark</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Record</title>
+    <link rel="stylesheet" href="tr_style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Welcome Admin</p>
+            <a href="#" class="logout_button">Log out</a>  
+        </div>
+
+        <div class="filter-section">
+            <h3>Transaction Record</h3>
+            <form id="searchform">
+                <label for="date_start">Search by Date:</label>
+                <input type="date" id="date_start">
+                <input type="date" id="date_end">
+                <input type="text" placeholder="Search by Account" id="search_account">
+                <button type="button" onclick="searchrecords()">Search</button>
+                <button type="button">Reset</button>
+            </form>        
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Account</th>
+                        <th>Actor</th>
+                        <th>Before Recharge</th>
+                        <th>Recharge</th>
+                        <th>After Recharge</th>
+                        <th>Cashier</th>
+                        <th>Balance Before Recharge</th>
+                        <th>Balance After Recharge</th>
+                        <th>Remark</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-01-01</td>
+                        <td>Account1</td>
+                        <td>User1</td>
+                        <td>$100</td>
+                        <td>$50</td>
+                        <td>$150</td>
+                        <td>Cashier1</td>
+                        <td>$100</td>
+                        <td>$150</td>
+                        <td>Recharge</td>
+                    </tr>
+                    <tr>
+                        <td>2024-01-02</td>
+                        <td>Account2</td>
+                        <td>User2</td>
+                        <td>$200</td>
+                        <td>$100</td>
+                        <td>$300</td>
+                        <td>Cashier2</td>
+                        <td>$200</td>
+                        <td>$300</td>
+                        <td>Recharge</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="sidebar.js"></script>
+</body>
+</html>

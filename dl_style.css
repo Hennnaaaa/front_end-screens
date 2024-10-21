@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+.table_container {
+    margin: 20px; /* Add margin around the container */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 100%; /* Make it full width */
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+/* Table Header Styles */
+th, td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Left-align text */
+}
+
+th {
+    background-color: #007BFF; /* Blue background for header */
+    color: white; /* White text color */
+}
+
+/* Even Row Styles */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+/* Hover Effect for Rows */
+tbody tr:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative; /* Position for dropdown */
+}
+
+.dropbtn {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 8px 12px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.dropbtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position below the button */
+    background-color: #fff; /* White background for dropdown */
+    min-width: 160px; /* Minimum width for dropdown */
+    z-index: 1; /* Stack above other elements */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: #333; /* Dark text color */
+    padding: 12px; /* Padding for dropdown items */
+    text-decoration: none; /* No underline */
+    display: block; /* Make links block elements */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+/* Show dropdown content when hovering over dropdown */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+/* Arrow Styles */
+.arrow {
+    margin-left: 5px; /* Space between text and arrow */
+    font-size: 16px; /* Size of the arrow */
+}
+/* Flexbox for body layout */
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+/* Main content styles */
+.container {
+    flex-grow: 1; /* Make content take the remaining space */
+    padding: 20px;
+    box-sizing: border-box;
+}

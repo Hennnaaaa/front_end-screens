@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="sidebarstyling.css">
+</head>
+<body>    
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="Create_Distributor.html"><img src="icon.png" alt="icon" width="30" height="30">Create Distributor</a></li>
+            <li><a href="disributor_list.html"><img src="icon.png" alt="icon" width="30" height="30">Distributor List</a></li>
+            <li><a href="transaction_record.html" class="active"><img src="icon.png" alt="icon" width="30" height="30">Transaction Record</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">
+                    <img src="icon.png" alt="icon" width="30" height="30">System Record
+                    <span class="arrow">&#9662;</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="distributor_record.html">Distributor Record</a>
+                    <a href="Agent_record.html">Agent Record</a>
+                    <a href="user_record.html">User Record</a>
+                </div>
+            </li>
+            <li><a href="reports.html"><img src="icon.png" alt="icon" width="30" height="30">Reports</a></li>
+            <li><a href="Data_summary.html"><img src="icon.png" alt="icon" width="30" height="30">Data Summary</a></li>
+            <li><a href="settings.html"><img src="icon.png" alt="icon" width="30" height="30">Setting</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = event.target.closest('.dropdown').querySelector('.dropdown-content');
+            const arrow = event.target.querySelector('.arrow');
+            
+            dropdown.classList.toggle('active'); // Toggle the dropdown visibility
+            arrow.classList.toggle('rotate');    // Rotate the arrow when dropdown is active
+        }
+    </script>
+</body>
+</html>
